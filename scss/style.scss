@@ -57,7 +57,9 @@ ul {
 	color: $color_2;
 	text-align: center;
 	font-weight: bold;
-	display: inline-block;
+    display: inline-block;
+    // position: sticky;
+	// top: 0px;
 }
 header {
 	background-color: $background_color_2;
@@ -168,13 +170,7 @@ ul#features {
 		}
 	}
 }
-ul ul {
-    position: absolute;
-    display: none;
-}
-li:hover ul {
-    display: block;
-}
+
 // img:hover{
 //     box-shadow:;
 // }
@@ -388,3 +384,53 @@ section#info {
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Gallery Page///////////////////////////////////////////////////////////////////////////////////////////////
+$color_1: #aaa;
+$color_2: #555;
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px;
+	position: sticky;
+	top: 0px;
+	ul {
+		list-style: none;
+		text-align: center;
+		li {
+			display: inline-block;
+			a {
+				display: inline;
+				padding: 15px;
+				text-decoration: none;
+				color: $color_1;
+				font-weight: 800;
+				text-transform: uppercase;
+				margin: 0 10px;
+				transition: all .5s;
+				&:after {
+					transition: all .5s;
+				}
+				&:before {
+					transition: all .5s;
+				}
+				&:hover {
+					color: $color_2;
+				}
+			}
+		}
+	}
+}
+ul {
+	ul {
+		position: absolute;
+        display: none;
+        text-align: center;
+	}
+}
+li {
+	&:hover {
+		ul {
+			display: block;
+		}
+	}
+}
