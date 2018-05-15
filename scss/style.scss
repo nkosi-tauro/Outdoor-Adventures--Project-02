@@ -1,436 +1,175 @@
-//////////////////////////////////////////////////////////////////////////////////////////////////VARIABLES////////////////////////////////////////////////////////////////////
-
-$color_1: #fff;
-$color_2: #298383;
-$color_3: #FFFBC5;
-$color_4: #ffffff;
-$color_5: #4C4C4C;
-$font_family_1: 'Montserrat', sans-serif;
-$background_color_1: #F3F1C7;
-$background_color_2: #41C7C7;
-$background_color_3: #36ADAD;
-$background_color_4: lightgray;
-$background_color_5: #E6E6E6;
-$background_color_6: #D3D3D3;
-$background_color_7: #CACACA;
-$background_color_8: #F2F2F2;
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////BODY STYLE//////////////////////////////////////////////////////////
-body {
-	height: 100%;
-	margin: 0;
-	font-family: $font_family_1;
-	display: grid;
-	grid-template-rows: auto 50px;
-	grid-template-columns: 12% auto;
-	grid-template-areas: "sidebar right" "footer footer";
-}
-html {
-	height: 100%;
-}
-
-///////////////////////////////////////////////////////////////////////////////HEADER/////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////NAVIGATION///////////////////////////////////////////////////////////////////////////
-a {
-	text-decoration: none;
-}
-ul {
-	list-style-type: none;
-	float: right;
-	li {
-		display: inline;
-		a {
-			color: $color_1;
-			padding: 15px;
-		}
-	}
-}
-
-//////////////////////////////LOGO////////////////
-#logo {
-	padding: 15px;
-	margin-left: 15px;
-	background-color: $background_color_1;
-	color: $color_2;
-	text-align: center;
-	font-weight: bold;
-    display: inline-block;
-    // position: sticky;
-	// top: 0px;
-}
-header {
-	background-color: $background_color_2;
-	grid-area: head;
-	display: grid;
-	grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end];
-}
-
-////////////////////////////////HORIZONTAL LINE STYLES//////////////
-hr{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-/////////////////////////////////////////////////////////////////HERO SECTION///////////
-section#hero {
-    background:url(../images/header-bg.jpg) ;
-    background-size: cover;
-    background-repeat: no-repeat; 
-	padding: 2em;
-	border-top: 5px solid #2EA0A0;
-	grid-area: hero;
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-}
-#content {
-	h1 {
-		text-transform: uppercase;
-		color: $color_3;
-	}
-	p {
-		color: $color_1;
-	}
-}
-img {
-	max-width: 100%;
-	background-size: cover;
-	margin: 0 auto;
-}
-#mountain {
-	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/////////////////////////////////////////SIDEBAR///////////////////////////////////////////////////////////////////////////////////
-
-.sidebar {
-	grid-area: sidebar;
-	background: #1c9090;
-	color: $color_4;
-	padding: 1em;
+html, #Home{
+    font-family: 'Roboto', sans-serif;
 }
-.main {
-	grid-area: right;
-	grid-template-rows: 51px fit-content(30%) 40% auto;
-	display: grid;
-	grid-template-areas: "head" "hero" "invention" "features";
-}
+//////////////////////////////////////////////////////////////////////////NAVIGATION///////////////////////////////////////////////
+//// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #262626;
+$nav-font-color: #ffffff;
+$link-hover-color: #2581DC;
 
-/////////////////////////////////////////////////////////FOOTER///////////////////////////////////////////////////////////////////////////////
-footer {
-	grid-area: footer;
-	background: lightgray;
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////MAIN SECTION//////////////////////////////////
-#features {
-	display: grid;
-	grid-template-columns: repeat(1, auto);
-	text-align: center;
-    grid-area: features;
-    grid-gap: 10px;
-	i {
-		font-size: 2em;
-	}
-}
-ul#features {
-	margin: 0;
-	padding: 0;
-	li {
-		background-color: $background_color_4;
-		padding: 1em;
-		align-self: start;
-		p {
-			color: $color_5;
-		}
-		&:nth-child(1) {
-			background-color: $background_color_5;
-		}
-		&:nth-child(2) {
-			background-color: $background_color_6;
-			align-self: center;
-		}
-		&:nth-child(3) {
-			background-color: $background_color_7;
-		}
-		&:nth-child(4) {
-			background-color: $background_color_5;
-			align-self: center;
-		}
-		&:nth-child(5) {
-			background-color: $background_color_6;
-		}
-	}
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  // background: $nav-background;
+  position:sticky;
+  top:10px;
 }
 
-// img:hover{
-//     box-shadow:;
+// // Logo and branding
+// .brand {
+//   position: absolute;
+//   padding-left: 20px;
+//   float: left;
+//   line-height: $nav-height;
+//   text-transform: uppercase;
+//   font-size: 1.4em;
+//   a,
+//   a:visited {
+//     color: $nav-font-color;
+//     text-decoration: none;
+//   }
 // }
 
-section#info {
-	background-color: $background_color_8;
-	padding: 2em;
-	grid-area: invention;
-	display: grid;
-	grid-template-columns: 1.5fr 1fr;
-	align-items: space-around;
-}
-#mountain-vector {
-	width: 200px;
-	align-self: center;
-}
-////////////////////////////////////////////////////////////////////////////MODAL BOX///////////////////////////////////////////////////////////////////////
-
-
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////RESPONSIVE QUERIES///////////////////////////////////////////////
-////////////////////////////////////////////////////////////MAX WITDH LAPTOP VIEW 960px////////
-@media screen and (max-width: 60em)/*60em =960px*/ {
-	.sidebar {
-		display: none;
-	}
-	body {
-		grid-template-columns: auto;
-		grid-template-areas: "right" "footer";
-	}
-	.main {
-		grid-template-areas: "head" "hero" "features" "invention";
-	}
-	#features {
-		grid-template-columns: repeat(2, auto);
-		grid-template-rows: repeat(3, auto);
-	}
-	ul#features {
-		li {
-			&:nth-child(5) {
-				grid-column: 1 / span 2;
-			}
-		}
-	}
-}
-///////////////////////////////////////MOBILE VIEW////////////////
-@media screen and (max-width: 40em)/*40em =640px*/ {
-	.main {
-		grid-template-rows: auto fit-content(30%) 40% auto;
-		grid-template-areas: "head" "hero" "invention" "features";
-	}
-	header {
-		grid-template-columns: auto;
-		grid-template-rows: repeat(2, auto);
-	}
-	#logo {
-		margin-left: 0;
-	}
-	nav {
-        position:sticky;
-        top:0;
-		ul {
-			float: none;
-			padding: 0;
-			margin: 0;
-			width: 100%;
-			li {
-				a {
-					width: calc(25% - 35px);
-					display: inline-block;
-					font-size: .9em;
-				}
-			}
-		}
-	}
-	section#hero {
-		grid-template-columns: auto;
-		text-align: center;
-	}
-	section#info {
-		grid-template-columns: auto;
-		text-align: center;
-	}
-	h1 {
-		font-size: 1.2em;
-	}
-	h2 {
-		font-size: 1.2em;
-	}
-	#mountain {
-		width: 100px;
-		height: 100px;
-	}
-	#content {
-		p {
-			font-size: .9em;
-		}
-	}
-	#content2 {
-		p {
-			font-size: .9em;
-		}
-	}
-	#features {
-		grid-template-columns: repeat(2, auto);
-		grid-template-rows: repeat(4, auto);
-	}
-	ul#features {
-		li {
-			&:nth-child(2) {
-				grid-column: 1 / span 2;
-			}
-			&:nth-child(1) {
-				grid-column: 1 / span 2;
-			}
-		}
-	}
-	footer {
-		background-color: $background_color_2;
-		p {
-			color: $color_1;
-			text-align: center;
-		}
-	}
-}
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Gallery Page///////////////////////////////////////////////////////////////////////////////////////////////
-$color_1: #aaa;
-$color_2: #555;
-
+// Navigation 
 nav {
-	width: 80%;
-	margin: 0 auto;
-	padding: 15px;
-	position: sticky;
-	top: 0px;
-	ul {
-		list-style: none;
-		text-align: center;
-		li {
-			display: inline-block;
-			a {
-				display: inline;
-				padding: 15px;
-				text-decoration: none;
-				color: $color_1;
-				font-weight: 800;
-				text-transform: uppercase;
-				margin: 0 10px;
-				transition: all .5s;
-				&:after {
-					transition: all .5s;
-				}
-				&:before {
-					transition: all .5s;
-				}
-				&:hover {
-					color: $color_2;
-				}
-			}
-		}
-	}
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      // float: left;
+      position: relative;
+      display:inline-block;
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: $nav-height;
+        background: blue;
+        color: $nav-font-color;
+        text-decoration: none;
+        &:hover {
+          background: $link-hover-color;
+          color: $nav-font-color;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ';
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
 }
-ul {
-	ul {
-		position: absolute;
-        display: none;
-        text-align: center;
-	}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
-li {
-	&:hover {
-		ul {
-			display: block;
-		}
-	}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
 }
+@media only screen and (max-width: 798px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+   width: 100%;
+    padding: $nav-height 0 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
