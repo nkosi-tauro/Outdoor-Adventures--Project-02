@@ -13,6 +13,7 @@
         // alert("Click On Image To Zoom")
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#!">Catergories</a>
+                    <!-- <a href="#!">Catergories</a>
             <ul class="nav-dropdown">
                 <li>
                     <a href="#!">Hiking</a>
@@ -41,7 +42,7 @@
                 <li>
                     <a href="#!">Camping</a>
                 </li>
-            </ul>
+            </ul> -->
                 </li>
                 <li>
                     <a href="gallery.html">Gallery</a>
@@ -54,14 +55,27 @@
 </div>
 </section>
 
-
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br>
+        <center><h3>Select a topic to view images</h3></center>
+        <hr>
+        <br>
+        <a href="#hiking">Hiking</a><br>
+        <a href="#fishing">Fishing</a><br>
+        <a href="#rockclimbing">Rock Climbing</a><br>
+        <a href="#camping">Camping</a><br>
+      </div>
+      <div id="main">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>      
 <!-- =============================================================================================== -->
 
 
 
 <!-- ================================================IMAGE GALLERY=========================================== -->
-    <center><h2>HIKING</h2></center>
-        <div class="gallery">
+    <center><h2 id="hiking">HIKING</h2></center>
+        <div  class="gallery">
                 <div class="img-w">
                   <img src="img/hiking/header-bg.jpg" alt="" /></div>
                 <div class="img-w"><img src="img/hiking/8.jpg" alt="" /></div>
@@ -73,8 +87,8 @@
  <br>
 <hr>                
 <br>
-            <center><h2>FISHING</h2></center>
-              <div class="gallery">
+            <center><h2 id="fishing">FISHING</h2></center>
+              <div  class="gallery">
                     <div class="img-w">
                       <img src="img/fishing/fish-img.jpg" alt="" /></div>
                     <div class="img-w"><img src="img/fishing/ED-1200.jpg" alt="" /></div>
@@ -86,8 +100,8 @@
 <br>
  <hr>    
 <br>
-                <center><h2>ROCK CLIMBING</h2></center>
-                  <div class="gallery">
+                <center><h2 id="rockclimbing">ROCK CLIMBING</h2></center>
+                  <div  class="gallery">
                     <div class="img-w">
                       <img src="img/rock-climbing/rock-bg.jpg" alt="" /></div>
                     <div class="img-w"><img src="img/rock-climbing/rock2.jpg" alt="" /></div>
@@ -99,8 +113,8 @@
 <br>
 <hr>                    
 <br>
-                <center><h2>CAMPING</h2></center>
-                <div class="gallery">
+                <center><h2 id="camping">CAMPING</h2></center>
+                <div  class="gallery">
                     <div class="img-w">
                       <img src="img/camping/camp1.jpg" alt="" /></div>
                     <div class="img-w"><img src="img/camping/camp2.jpg" alt="" /></div>
