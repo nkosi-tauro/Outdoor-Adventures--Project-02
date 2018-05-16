@@ -6,14 +6,7 @@
     <title>Gallery - Outdoor Adventures</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style2.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" /> -->
 
-    <!-- ======================Script================================== -->
-    <script >
-        // alert("Click On Image To Zoom")
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 <body >
         <!-- preloader section -->
@@ -131,11 +124,17 @@
                  </footer>
 
 
+
+
+                 
 <!-- ===============================================SCRIPT================================ -->
-       
+<!-- ======================Script================================== -->
+<script src="js/jquery v2.1.3.js"></script>
+<script src="js/main.js"></script>
+  
+
+<!-- JQUERY script -->
 <script>
-
-
         $(function() {
   $(".img-w").each(function() {
     $(this).wrap("<div class='img-c'></div>")
@@ -215,23 +214,7 @@ $(document).on("click", ".img-c.active", function() {
 
 
 // });
-
         </script>
-        <!-- <script>
-function checkHeight() {
-    let currentScrollPos = document.documentElement.scrollTop;
-    let navHead = document.getElementById("navigation");
 
-    if (currentScrollPos < 750) {
-        navHead.style.display = "none";
-        navHead.style.backgroundColor = "#333";
-
-    }
-    else if (currentScrollPos > 750) {
-        navHead.style.display = "block";
-        navHead.style.opacity = "1";
-    }
-}
-        </script> -->
 </body>
 </html>
