@@ -5,8 +5,7 @@ html, #Home {
 .navigation {
   height: 70px;
   position: sticky;
-  top: 10px; 
-}
+  top: 10px; }
 
 .nav-container {
   max-width: 1000px;
@@ -25,7 +24,6 @@ nav ul {
       display: block;
       padding: 0 20px;
       line-height: 70px;
-      /* background: blue; */
       color: #ffffff;
       text-decoration: none; }
       nav ul li a:hover,
@@ -110,5 +108,27 @@ nav ul {
       transform: rotate(45deg); }
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
+
+body {
+  margin: 0; }
+
+.background-img {
+  background: url(../img/slide-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+h1 {
+  text-align: center;
+  margin-top: 15%;
+  color: #ffffff; }
+
+h1 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-left: 27.5%; }
 
 /*# sourceMappingURL=style.css.map */
