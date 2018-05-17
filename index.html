@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Outdoor Adventures</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/card-style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="  https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script> -->
+    <script src="js/main2.js"></script>
+
+
+
 </head>
 <body id="home">
+<!-- =========================================HEADER IMAGE============================ -->
 
-    <div class="background-img">
+
+
+
+<!-- ========================================== -->
+<section id="cover" class="cover">
+        <!-- <h1>Categories</h1> -->
+<!-- <div class="background-img"> -->
     <section class="navigation">
         <div class="nav-container">
-            <div class="brand">
-                <!-- <a href="#!">Logo</a> -->
-            </div>
             <nav>
                 <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
                     <ul class="nav-list">
@@ -47,42 +58,233 @@
                         </li>
                     </ul>
                 </nav>
-        </div class=h1>
-        <h1>Hello, This Is Outdoor Adventures</h1>
-        <h3 >Get <strong>ready to experience</strong> the true <strong>adrenaline</strong> of life!</h3>
-    </div>
+            </div>
     </section>
+ 
+                <div>
+                     <h1 class="h1">Hello, This Is Outdoor Adventures</h1>
+                    <h3 class="h3">Get <strong>ready to experience</strong> the true <strong>adrenaline</strong> of life!</h3>
+                </div>
+        <br>
+        <br>
+                <div>
+                    <a href="gallery.html"><button class="btn"><span>View Gallery</span></button></a>
+                </div>
+        </div>
+                    <p>Scroll</p>
+</section>
+<!-- ============================================================================ -->
+<!-- ========Body -->
+<main>
+        <nav id="nav">
+          <a href="#cover"><h3>Home</h3></a>
+          <a href="#section-one"><h3>Hiking</h3></a>
+          <a href="#section-two"><h3>Fishing</h3></a>
+          <a href="#section-three"><h3>Rock Climbing</h3></a>
+          <a href="#section-four"><h3>Camping</h3></a>
+        </nav>
 
-    <!--=========================================== SCRIPT ===================================================================-->
-    <script>
-//This scipt is for the navbar this makes it change from a normal nav to a hamburger menu when screen size is reduced.
-(function($) { // Begin jQuery
+        <section id="section-one" class="content">
+          <div>
+            <h2 class="h2-content">Hiking</h2>
+            <!-- <img src="http://placekitten.com/1280/600" /> -->
+            <p>Dolorem rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore dolores rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.</p>
+          </div>
+         </section>
+         <div class="wrap">
+                <div class="tile"> 
+                  <img src="img/hiking/skeleton-img.jpg">
+                  <div class="text">
+                  <h1>Skeleton Gorge</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                
+                
+                <div class="tile"> 
+                  <img src="img/hiking/table-mountain-cape-town-hikers.jpg">
+                  <div class="text">
+                  <h1>Table Mountain</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                  
+                  <div class="tile"> 
+                  <img src="img/hiking/fran.jpg">
+                  <div class="text">
+                  <h1>Lions Head.</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                </div>
+                 <!--================================================================  -->
+        <section id="section-two" class="content">
+          <div>
+            <h2 class="h2-content">Fishing</h2>
+            <!-- <img src="http://placekitten.com/1180/500" /> -->
+            <p>Dolorem rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore dolores rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.</p>
+          </div>
+        </section>
+
+        <div class="wrap">
+                <div class="tile"> 
+                  <img src="img/fishing/fish2.jpg">
+                  <div class="text">
+                  <h1>Hout-Bay</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 
+                
+                
+                <div class="tile"> 
+                  <img src="img/fishing/fish-img.jpg">
+                  <div class="text">
+                  <h1>Table View</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                  
+                  <div class="tile"> 
+                  <img src="img/fishing/ED-1200.jpg">
+                  <div class="text">
+                  <h1>Langebaan</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                </div>
+                <!-- ================================================================= -->
     
-$(function() { // DOM ready
-      // If a link has a dropdown, add sub menu toggle.
-     $('nav ul li a:not(:only-child)').click(function(e) {
-            $(this).siblings('.nav-dropdown').toggle();
-        // Close one dropdown when selecting another
-                $('.nav-dropdown').not($(this).siblings()).hide();
-                    e.stopPropagation();
-        });
-      // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-        $('.nav-dropdown').hide();
-    });
-      // Toggle open and close nav styles on click
-      $('#nav-toggle').click(function() {
-        $('nav ul').slideToggle();
-      });
-      // Hamburger to X toggle
-      $('#nav-toggle').on('click', function() {
-        this.classList.toggle('active');
-      });
-    }); // end DOM ready
-  })(jQuery); // end jQuery
+        <section id="section-three" class="content">
+          <div>
+            <h2 class="h2-content">Rock-Climbing</h2>
+            <!-- <img src="http://placekitten.com/980/450" /> -->
+            <p>Dolorem rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore dolores rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.</p>
+          </div>
+          </section>
 
+          <div class="wrap">
+                <div class="tile"> 
+                  <img src="img/rock-climbing/rock-bg.jpg">
+                  <div class="text">
+                  <h1>Woodstock Cave</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                
+                
+                <div class="tile"> 
+                  <img src="img/rock-climbing/rock2.jpg">
+                  <div class="text">
+                  <h1>Gordon's Bay</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                  
+                  <div class="tile"> 
+                  <img src="img/rock-climbing/rock3.jpg">
+                  <div class="text">
+                  <h1>12 Apostoles.</h1>
+                  <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  </div>
+                 </div>
+                <!-- ======================================================================== -->
+                <section id="section-four" class="content">
+                        <div>
+                          <h2 class="h2-content">Camping</h2>
+                          <!-- <img src="http://placekitten.com/980/450" /> -->
+                          <p>Dolorem rerum et aspernatur inventore quasi et quod doloremque exercitationem sunt adipiscing facilis possimus minus labore exercitationem aspernatur ipsam voluptatibus excepturi nihil! Voluptatem dolores id accusantium temporibus assumenda et atque unde consectetur fugit sit qui voluptas fugit dolore nihil quidem tempore consequuntur similique reprehenderit et rerum. Velit corporis consequatur nesciunt est corporis et qui quod. Recusandae qui consequatur itaque inventore hic molestiae labore dolores rerum veniam culpa dolorem velit in molestiae voluptatem. Non sed quod animi excepturi sapiente obcaecati quod.</p>
+                        </div>
+                      </section>
 
+                      <div class="wrap">
+                            <div class="tile"> 
+                              <img src="img/camping/camp1.jpg">
+                              <div class="text">
+                              <h1>Franschheok</h1>
+                              <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                            <div class="dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                              </div>
+                             </div>
+                            
+                            
+                            <div class="tile"> 
+                              <img src="img/camping/camp2.jpg">
+                              <div class="text">
+                              <h1>Stellenbosch</h1>
+                              <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                            <div class="dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                              </div>
+                             </div>
+                              
+                              <div class="tile"> 
+                              <img src="img/camping/camp3.jpg">
+                              <div class="text">
+                              <h1>Somerset West</h1>
+                              <h2  class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </h2>
+                            <div class="dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                              </div>
+                             </div>
+                            </div>
+                              <!-- ====================================================== -->
+           
+                   
+      </main>
 
-    </script>
 </body>
 </html>

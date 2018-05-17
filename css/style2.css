@@ -122,7 +122,7 @@ html, body {
 
 
 /* preloader section  */
-.preloader {
+/* .preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -160,7 +160,7 @@ html, body {
   .sk-circle .sk-circle2 {
     -webkit-transform: rotate(30deg);
         -ms-transform: rotate(30deg);                 /*rotation of the circles to give it a uniform circular shape*/
-            transform: rotate(30deg); }
+            /* transform: rotate(30deg); }
   .sk-circle .sk-circle3 {
     -webkit-transform: rotate(60deg);
         -ms-transform: rotate(60deg);
@@ -249,7 +249,7 @@ html, body {
             transform: scale(0); }
   40% {
     -webkit-transform: scale(1);
-            transform: scale(1); } }
+            transform: scale(1); } } */ 
 
 /*=============================================================================================== */
 
