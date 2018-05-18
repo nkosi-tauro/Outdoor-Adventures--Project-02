@@ -10,7 +10,7 @@ Card
 .tile
 {
   width:380px;
-  height:380px;
+  height:420px;
   margin:30px;
   left:80px;
   background-color:#000000;
@@ -50,7 +50,7 @@ Card
 }
 .tile .text  h2
 {
- font-size: 2em;
+ font-size: 1em;
   margin:20px 0 0 0;
   font-style:italic;
    transform: translateX(200px);
