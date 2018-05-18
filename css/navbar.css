@@ -8,14 +8,18 @@ html, #Home {
   
   .navigation {
     height: 70px;
-    /* background: #262626; */
     position:sticky;
-    top:10px;
+    top: 1px;
+    z-index: 1;
+    background-color:rgba(72,72,72,0.7);
+    font-size: 1.5em;
+    margin: 0%;
  }
   
   .nav-container {
     max-width: 1000px;
-    margin: 0 auto; }
+    margin: 0 auto; 
+  }
   
 
     nav ul {
@@ -36,15 +40,14 @@ html, #Home {
           display: block;
           padding: 0 20px;
           line-height: 70px;
-          /* background: #262626; */
-          color: #ffffff;
+          color: rgb(255, 208, 0);;
           text-decoration: none; 
-        
         }
+
           nav ul li a:hover,
-          nav ul li a:visited:hover {
-            background: #2581DC;
-            color: #ffffff; }
+          nav ul li a:visited:hover
+           {background: rgb(37, 49, 220);
+            color: rgb(228, 228, 224); }
           nav ul li a:not(:only-child):after,
           nav ul li a:visited:not(:only-child):after {
             padding-left: 4px;

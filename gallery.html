@@ -9,24 +9,7 @@
 
 </head>
 <body >
-        <!-- preloader section
-        <section class="preloader">
-                <div class="sk-circle">
-                   <div class="sk-circle1 sk-child"></div>
-                   <div class="sk-circle2 sk-child"></div>
-                   <div class="sk-circle3 sk-child"></div>
-                   <div class="sk-circle4 sk-child"></div>
-                   <div class="sk-circle5 sk-child"></div>
-                   <div class="sk-circle6 sk-child"></div>
-                  <div class="sk-circle7 sk-child"></div>
-                   <div class="sk-circle8 sk-child"></div>
-                   <div class="sk-circle9 sk-child"></div>
-                   <div class="sk-circle10 sk-child"></div>
-                   <div class="sk-circle11 sk-child"></div>
-                   <div class="sk-circle12 sk-child"></div>
-                 </div>
-            </section>
-         -->
+
 <!-- ===============================================NAVBAR SECTION================================= -->
 
 <section id="navigation" class="navigation">
@@ -47,10 +30,10 @@
         </nav>
 </div>
 </section>
-
+<!-- ===================================================SIDE BAR====================================== -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <br>
+         <br>
         <center><h3>Select a topic to view images</h3></center>
         <hr>
         <br>
@@ -59,9 +42,10 @@
         <a href="#rockclimbing"class="sideindex">Rock Climbing</a><br>
         <a href="#camping" class="sideindex">Camping</a><br>
       </div>
-      <div id="main">
+      <div id="main"> 
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>      
+
 <!-- =============================================================================================== -->
 
 
@@ -119,9 +103,18 @@
 <br>
 <hr>                    
 <br>
-                 <footer>
-                     <center><p>&copy Outoor Adventures | 2018</p></center>
-                 </footer>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+  <center><p>Your Adventure BEGINS now!!!</p></center>
+  <div>
+</div>
+<center><p class="footer">&copy Outoor Adventures | 2018</p></center>
+
+</footer>
 
 
 
@@ -171,50 +164,7 @@ $(document).on("click", ".img-c.active", function() {
     copy.remove();
   }, 500)
 })
- 
-////////////////////////////////////////////////JQUERY PRELOADER////////////////
-
-/* jQuery Pre loader for the gallery page due to load times
-  -----------------------------------------------*/
-  $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
-});
-// $(document).ready(function() {
-
-// /* Home Slideshow Vegas
-// -----------------------------------------------*/
-// $(function() {
-//   $('body').vegas({
-//       slides: [
-//           { src: 'img/slide-1.jpg' },
-//           { src: 'img/slide-2.jpg' }
-//       ],
-//       timer: false,
-//       transition: [ 'zoomOut', ]
-//   });
-// });
-
-
-//  /* Back top
-// -----------------------------------------------*/
-//   $(window).scroll(function() {
-//       if ($(this).scrollTop() > 200) {
-//       $('.go-top').fadeIn(200);
-//       } else {
-//         $('.go-top').fadeOut(200);
-//       }
-//       });   
-//       // Animate the scroll to top
-//     $('.go-top').click(function(event) {
-//       event.preventDefault();
-//     $('html, body').animate({scrollTop: 0}, 300);
-//     })
-    
-
-
-
-// });
-        </script>
+</script>
 
 </body>
 </html>

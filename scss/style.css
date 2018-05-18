@@ -3,11 +3,13 @@ html, #Home {
   font-family: 'Roboto', sans-serif;
 }
 
+/* ===================================MAIN NAVBAR===================================================== */
 .navigation {
   height: 70px;
   position: sticky;
-  top: 10px;
-  z-index: 999;
+  top: 1px;
+  z-index: 1;
+  background-color:rgba(72,72,72,0.7);
 }
 
 .nav-container {
@@ -32,7 +34,7 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  color: #d11515;
+  color: #d5ec04;
   text-decoration: none;
 }
 
@@ -57,13 +59,6 @@ nav ul li ul li a {
   line-height: 20px;
 }
 
-.nav-dropdown {
-  position: absolute;
-  display: none;
-  z-index: 999;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-}
-
 /* Mobile navigation */
 .nav-mobile {
   display: none;
@@ -74,7 +69,7 @@ nav ul li ul li a {
   height: 70px;
   width: 70px;
 }
-
+/* ============================MEDIA QUERIES FOR NAVBAR======================================= */
 @media only screen and (max-width: 798px) {
   .nav-mobile {
     display: block;
@@ -152,11 +147,14 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
+/* ============================================================================================== */
+
 
 body {
   margin: 0;
 }
 
+/* ==============================LANDING PAGE HEADERS AND BUTTON========================================== */
 .h1 {
   text-align: center;
   margin-top: 10%;
@@ -186,7 +184,7 @@ body {
   padding: 17px 60px;
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  border: 2px solid black;
+  border: 2px solid rgb(251, 255, 0);
 }
 
 .btn span {
@@ -201,7 +199,7 @@ body {
   top: 0;
   height: 490%;
   width: 140%;
-  background: #78c7d2;
+  background: #7349d6;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -213,11 +211,6 @@ body {
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-.link {
-  font-size: 20px;
-  margin-top: 30px;
-}
-
 div a {
   color: #000;
   font-size: 25px;
@@ -226,10 +219,13 @@ div a {
 
 #cover {
   padding-top: 5vw;
-  background-image: url(../img/slide-2.jpg);
+  background-image: url(../img/header-bg.jpeg);
   position: relative;
   display: block;
+  background-size: cover;
 }
+
+/* ======================================MEDIA QUERIES LANDING PAGE======================================= */
 
 @media screen and (max-width: 300px) {
   #cover {
@@ -299,13 +295,15 @@ div a {
   }
 }
 
+
+ 
 .cover p:before {
-  content: "";
+  /* content: ""; */
   bottom: 1vw;
   position: absolute;
   left: 50%;
   border-top: 6px solid #f5faff;
-  border-left: 6px solid transparent;
+  border-left: 6px solid transparent;                                                               /*This Section Is the main body. These Styles are for the section below the landing page*/
   border-right: 6px solid transparent;
   margin-left: -6px;
 }
@@ -403,9 +401,10 @@ div a {
   opacity: 1;
 }
 
+/* ====================================SECONDARY NAV========================================= */
 main #nav {
   padding: 1.5vw;
-  background-color: #050f1e;
+  background-color:rgba(72,72,72,0.7);
   position: fixed;
   text-align: center;
   z-index: 999;
@@ -431,7 +430,7 @@ main #nav {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   display: inline-block;
-  color: #f5faff;
+  color: #063f79;
   text-decoration: none;
   text-transform: uppercase;
   border-left: 1px solid #585e68;
@@ -453,7 +452,8 @@ main #nav {
 #nav a:first-of-type {
   border-left: none;
 }
-
+/* ========================================================================================= */
+/* ============================================== Headings & MEDIA QUERIES========================== */
 .h2-content {
   font-size: 10vw;
   text-align: center;
@@ -507,4 +507,87 @@ h3 {
 h3 #cover {
   font-size: 2em;
 }
+/* ==========================================================FOOTER============================== */
+footer {
+  padding: 3%;
+  background-color: #000;
+ 
+}
+footer p{
+  color: #f5faff;
+  font-size: 5em;
+}
+.footer{
+  color: #f5faff;
+  font-size: 1.5em;
+}
+/* ===================================================================================================== */
+/* ======================== */
+strong {
+  color:rgb(255, 230, 0);                   /*This section targets various headings and text i want to color*/
+}
+.Begin{
+  color: #d11515;
+}
+
+.hello{
+  color:deeppink;
+}
+.h2-content {
+  font-size: 5em;
+  text-align: center;
+  color: #ff3747; }
+/* ================================================================================ */
+
+
+/* =====================================Scroll Icon On landing Page==================================== */
+  .scroll{
+    width: 30px;
+    height: 50px;                                 /*Scroll icon border*/
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    cursor: pointer;
+    margin-top: -25px;
+    margin-left: -15px;
+}
+.scroll .mouse{
+    width: 100%;                                                 /*Scoll icon mouse*/
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border: 2px solid #24d40d;
+    border-radius: 20px;
+}
+.scroll .wheel{
+    width: 4px;
+    height: 4px;
+    top: 10px;
+    left: 50%;
+    position: absolute;
+    background: #050505;
+    display: block;
+    border-radius: 50%;
+    margin-left: -2px;
+    animation-name: scroll-wheel;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll-wheel{
+    from{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to{
+        transform: translate3d(0, 10px, 0);
+        opacity: 0;
+    }
+}
+
+.scroll2{
+  margin-bottom:4%;
+}
+/* ================================================================================ */
 /*# sourceMappingURL=style.css.map */

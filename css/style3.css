@@ -113,9 +113,25 @@
     }
  }
 
- footer p {
-    color: #ffffff;
-    background-color: black;
-    padding: 20px;
-    margin-bottom: 10px;
-}
+ footer {
+    padding: 5%;
+    background-color: #000;
+  /* top: 100%;
+  left: 50%; */
+  }
+  footer p{
+    color: #f5faff;
+    font-size: 5em;
+  }
+  .footer{
+    color: #f5faff;
+    font-size: 1.5em;
+  }
+
+  .begun{
+      color:red;
+  }
+
+  i{
+    margin-left:1.5%
+  }
