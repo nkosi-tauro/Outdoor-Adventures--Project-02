@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact - Outdoor Adventures</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style3.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     
 </head>
@@ -39,7 +42,7 @@
 <br>
     <div id="contact-form">
             <div>
-                <h1>Contact Us</h1> 
+                <center><h1>Contact Us</h1></center>
                 <h4>Have a question or just want to get in touch? Let's chat.</h4> 
             </div>
                 <p id="failure">message not sent. Please try again</p>  
@@ -77,66 +80,33 @@
                       </label>  
                     </div>
                     <div>		           
-                      <button name="submit" type="submit" id="submit" >SEND</button> 
+                      <!-- <button name="submit" type="submit" id="submit" >SEND</button>  -->
+                      <button class="btn"><span>Submit</span></button>
                     </div>
                    </form>
         
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+      
             <footer>
                 <center><p>Your Adventure Has <span class="begun">BEGAN!!!</span></p></center>
                 <div>
                     <center><p class="footer">Connect With US to keep up date with our adventures !!</p></center>
-                  <center><i class="fab fa-facebook fa-3x"  style="color:rgb(214, 213, 224)"></i>   <i class="fab fa-twitter fa-3x" style="color:rgb(10, 145, 235)"></i><i class="fab fa-instagram fa-3x" style="color:rgb(29, 235, 10)"></i></center>
+                  <center><i class="fab fa-facebook fa-3x"  style="color:rgb(73, 5, 73)"></i>   <i class="fab fa-twitter fa-3x" style="color:rgb(10, 145, 235)"></i><i class="fab fa-instagram fa-3x" style="color:rgb(29, 235, 10)"></i></center>
               </div>
               <center><p class="footer">&copy Outoor Adventures | 2018</p></center>
               
               </footer>
               
 
- 
- <!--=========================================== SCRIPT ===================================================================-->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+             <!--=========================================== SCRIPT ===================================================================-->
+              <!-- Local jquery to speed up load times -->
+             <script src="js/jquery v2.1.3.js"></script>
  
  <script>
 
         (function($) { // Begin jQuery
             
-        $(function() { // DOM ready
+        $(function() { 
               // If a link has a dropdown, add sub menu toggle.
              $('nav ul li a:not(:only-child)').click(function(e) {
                     $(this).siblings('.nav-dropdown').toggle();
@@ -144,7 +114,7 @@
                         $('.nav-dropdown').not($(this).siblings()).hide();
                             e.stopPropagation();
                 });
-              // Clicking away from dropdown will remove the dropdown class
+              // Clicking away from dropdown removes the dropdown class
             $('html').click(function() {
                 $('.nav-dropdown').hide();
             });
@@ -156,8 +126,9 @@
               $('#nav-toggle').on('click', function() {
                 this.classList.toggle('active');
               });
-            }); // end DOM ready
+            }); 
           })(jQuery); // end jQuery
             </script>
+<!-- ===================================================================================== -->
 </body>
 </html>

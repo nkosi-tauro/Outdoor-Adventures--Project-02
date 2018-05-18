@@ -60,11 +60,11 @@ Card
 }
 p .p-card
 {
- font-size: 2em;
+ font-size: 3em;
   margin:20px 0 0 0;
   line-height: 25px;
-/*   opacity:0; */
-  transform: translateX(-200px);
+  opacity:0; 
+   transform: translateX(-200px);
   transition-delay: 0.2s;
 }
 .animate-text
@@ -101,4 +101,5 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     width:400px;
   }
 }
+
 /* ===================================================================================== */
