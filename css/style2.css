@@ -276,4 +276,51 @@ span {                                        /*This code is for the side nav ha
 i{
   margin-left:1.5%
 }
+/* =================================BACK TO TOP==================================== */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #0f0cbb;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+#back-to-top:hover {
+  background: #7c1065;
+}
+#back-to-top.show {
+  opacity: 1;
+}
+#back-to-top:hover, #back-to-top:focus {
+  animation: pulse 2s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.pulse {
+  --color: #f71485;
+  --hover: #f74d14;
+}
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: rgb(255, 255, 255);
+}
+
 /* ================================================================================================== */

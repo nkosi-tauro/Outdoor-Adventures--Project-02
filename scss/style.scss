@@ -463,3 +463,57 @@ h3 #cover {
   font-size: 2em
 }
 ///////////////////////////////////////////////////////////////SCROLL TO TOP ICON/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #1c0fd3;
+  color: rgb(255, 251, 251);
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+#back-to-top:hover {
+  background: #7c1065;
+}
+#back-to-top.show {
+  opacity: 1;
+}
+// Animate the size, outside
+#back-to-top:hover, 
+#back-to-top:focus {
+  animation: pulse 2s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+$colors: (
+  pulse: #f71485, 
+);
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
